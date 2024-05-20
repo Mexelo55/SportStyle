@@ -1,0 +1,1321 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #494946;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 44px;
+}
+p,a,li{
+    font-size: 22px;
+}
+@media (max-width: 767px) {
+    p,a,li{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 18px;
+    }
+
+
+
+}
+header {
+    height: auto;
+    width: auto;
+    background-color: #a4bfb8;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    padding-top: 10px;
+}
+@media (max-width: 767px) {
+    .logo {
+        width: 100px;
+        height: 50px;
+        position: relative;
+    }
+}
+nav{
+    height: auto;
+    background-color: #a4bfb8;
+    text-align: center;
+    word-spacing: 7px;
+    padding: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: #494946;
+    font-weight: bold;
+}
+nav a:hover {
+    color: white; /* Zmiana koloru tekstu na biały po najechaniu myszką */
+}
+section {
+    background-color: #e5e9f1;
+    width: auto;
+    height: 100%;
+    padding-bottom: 10px;
+    min-height: 100vh;
+}
+.Paletka {
+    background-image: url('/obrazy/Glowna_paletka.jpg');
+    background-size: cover; /* Zapewnia, że obrazek będzie zawsze całkowicie zapełniał obszar tła */
+    background-position: center;
+    height: 1000px; /* Wysokość tła, możesz dostosować ją według potrzeb */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .Paletka{
+        height: 400px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Paletka{
+        height: 1000px;
+    }
+}
+.Glowna_Witamy{
+    text-align: center;
+}
+.Glowna_naj_przeceny{
+    text-align: center;
+}
+.Glowna_przeceny {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie wertykalne */
+}
+.Glowna_przeceny div {
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .Glowna_przeceny img{
+        height: 200px;
+        width: 150px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Glowna_przeceny img{
+        height: 500px;
+        width: 400px;
+    }
+}
+@media (min-width: 1200px) {
+    .Glowna_przeceny img{
+        height: 800px;
+        width: 600px;
+    }
+}
+.Glowna_przeceny p{
+    text-align: center;
+}
+.Glowna_powody{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Glowna_dlaczego img{
+        height: 300px;
+        width: 150px;
+    }
+}
+.Glowna_dlaczego{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+footer {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: #494946;
+    background-color: #637573;
+}
+footer p{
+    font-weight: bold;
+}
+footer a{
+    color: #494946;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white; /* Zmiana koloru tekstu na biały po najechaniu myszką */
+}
+.O_nas_zadanie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.O_nas_zadanie p {
+    width: 50%; /* Ustawienie szerokości tekstu */
+    margin: 0; /* Usunięcie marginesów */
+}
+@media screen and (max-width: 767px) {
+    .O_nas_zadanie p {
+        width: 100%; /* Zmiana szerokości tekstu na 100% dla mniejszych ekranów */
+    }
+}
+.O_nas_wartosci {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.O_nas_wartosci p {
+    width: 50%; /* Ustawienie szerokości tekstu */
+    margin: 0;
+}
+@media screen and (max-width: 767px) {
+    .O_nas_wartosci p {
+        width: 100%; /* Zmiana szerokości tekstu na 100% dla mniejszych ekranów */
+    }
+}
+@media (max-width: 767px) {
+    .O_nas_zadanie img{
+        width: 100px;
+        height: 200px;
+    }
+    .O_nas_wartosci img{
+        width: 200px;
+        height: 100px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .O_nas_zadanie img{
+        width: 350px;
+        height: 700px;
+    }
+    .O_nas_wartosci img{
+        width: 700px;
+        height: 350px;
+    }
+}
+.Kontakty_FQA{
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.Kontakty_div_FQA {
+    width: 70%; /* Ustawienie maksymalnej szerokości kontenera */
+    margin: 0 auto; /* Wyśrodkowanie kontenera na stronie */
+}
+.Kontakty_pytania {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #e5e9f1;
+}
+.Kontakty_pytania h1 {
+    text-align: left; /* Wyrównanie nagłówka do lewej strony */
+    margin-bottom: 10px; /* Dodatkowy margines na dole nagłówka */
+}
+.Kontakty_brak_odpowiedzi{
+    text-align: center;
+}
+.Kontakty_wysylanie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Kontakty_form {
+    height: auto;
+    background-color: #a4bfb8;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie elementów w pionie */
+    padding: 10px;
+}
+
+.Kontakty_obraz img {
+    max-width: 100%; /* Zdjęcie dostosowuje się do szerokości swojego kontenera */
+    height: auto; /* Automatycznie dostosowuje wysokość zachowując proporcje */
+    margin-bottom: 10px; /* Dodatkowy margines na dół */
+}
+
+.Kontakty_form input[type="text"],
+.Kontakty_form input[type="email"] {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    background-color: #f4f4f4;
+}
+
+.Kontakty_form input[type="submit"] {
+    margin-top: 10px; /* Dodatkowy margines na górę */
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Kontakty_form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.Galeria_zdjecia1, .Galeria_zdjecia2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.Galeria_zdjecia1 img, .Galeria_zdjecia2 img{
+    margin: 10px;
+    padding: 10px;
+}
+@media (max-width: 767px) {
+    .Galeria_zdjecia1 img,
+    .Galeria_zdjecia2 img {
+        width: 150px;
+        margin-right: 5px; 
+    }
+    .Galeria_male_zdj{
+        width: 125px;
+        margin-bottom: 5px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Galeria_zdjecia1 img,
+    .Galeria_zdjecia2 img{
+        width: 350px;
+        margin-bottom: 5px;
+    }
+    .Galeria_male_zdj{
+        width: 300px;
+        margin-bottom: 5px;
+    }
+}
+.Opcje_platnosci_opcje, .Opcje_platnosci_pytania{
+    margin: 20px;
+    padding: 20px;
+}
+.Opcje_platnosci_pytania2{
+    margin-left: 30px;
+}
+.Opcje_platnosci_jakie{
+    font-weight: bold;
+    text-align: center;
+}
+.Opcje_platnosci_pytania {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Opcje_platnosci_pytania div {
+    width: 45%; /* Ustawienie szerokości diva */
+}
+.Opcje_platnosci_pytania div:nth-child(2) {
+    border-left: 1px solid #000; /* Dodanie kreski oddzielającej */
+    padding-left: 20px; /* Dodanie odstępu po lewej stronie kreski */
+}
+.Opcje_platnosci_dalszy_problem{
+    text-align: center;
+}
+.Wysylka_section h1{
+    text-align: center;
+}
+.Wysylka_info{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Wysylka_opcje{
+    margin-left: 30px;
+}
+.Wysylka_opcje li ul{
+    margin-bottom: 20px;
+}
+.Wysylka_glowny{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.Wysylka_glowny div{
+    width: 45%;
+}
+.Wysylka_dalszy_problem{
+    border-left: 1px solid #000;
+    padding-left: 20px;
+    text-align: center;
+}
+.Best-sellery_glowny{
+    width: 100%; /* Dostosowanie szerokości do kontenera, w którym znajdują się te sekcje */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Wyśrodkowanie wzdłuż osi X */
+    align-items: center; /* Wyśrodkowanie wzdłuż osi Y */
+}
+.Best-sellery_koszulka, .Best-sellery_spodenki, .Best-sellery_plecak{
+    width: 1000px;
+    height: auto;
+    background-color: white;
+    border: grey solid 1px;
+    margin: 10px;
+}
+@media (max-width: 767px) {
+    .Best-sellery_koszulka img, .Best-sellery_spodenki img, .Best-sellery_plecak img{
+        width: 200px;
+    }
+    .Best-sellery_koszulka, .Best-sellery_spodenki, .Best-sellery_plecak{
+        width: 200px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Best-sellery_koszulka img, .Best-sellery_spodenki img, .Best-sellery_plecak img{
+        width: 500px;
+    }
+    .Best-sellery_koszulka, .Best-sellery_spodenki, .Best-sellery_plecak{
+        width: 500px;
+    }
+}
+.Opinie_glowny{
+    text-align: center;
+}
+.Opinie_opinie{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Opinie_opinie div{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+}
+.Opinie_kontakt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Opinie_numer_email{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.Opinie_numer_email i, .Opinie_numer_email p{
+    margin: 10px;
+}
+.Zwroty_jak {
+    text-align: center;
+}
+.Zwroty_glowny {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.Zwroty_dzialanie{
+    margin-left: 30px;
+}
+.Zwroty_glowny div {
+    width: 45%;
+}
+.Zwroty_dalszy_problem {
+    border-left: 1px solid #000;
+    padding-left: 20px;
+    text-align: center;
+}
+.Praca_szukanie{
+    text-align: center;
+}
+.Praca_lista{
+    margin: 30px;
+    margin-top: 10px;
+}
+.Praca_chetny{
+    text-align: center;
+}
+.Praca_form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.Praca_form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.Praca_form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+@media (max-width: 767px) {
+    .Praca_form input{
+        width: 150px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Praca_form input{
+        width: 300px;
+    }
+}
+@media (min-width: 1200px) {
+    .Praca_form input{
+        width: 500px;
+    }
+}
+.Praca_jesli{
+    text-align: center;
+}
+.Praca_skontaktuj{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Praca_skontaktuj i{
+    margin: 10px;
+}
+.Karty_podarunkowe_section h1, .Karty_podarunkowe_podzial{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Karty_podarunkowe_rodzaje p{
+        width: 100px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Karty_podarunkowe_rodzaje p{
+        width: 300px;
+    }
+}
+@media (min-width: 1200px) {
+    .Karty_podarunkowe_rodzaje p{
+        width: 500px;
+    }
+}
+.Karty_podarunkowe_rodzaje{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.Karty_podarunkowe_section li{
+    margin-left: 30px;
+}
+.Karty_podarunkowe_section ul{
+    justify-content: center;
+}
+.Bluzy20_glowny{
+    width: 100%; /* Dostosowanie szerokości do kontenera, w którym znajdują się te sekcje */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Bluzy20_bluza1, .Bluzy20_bluza2, .Bluzy20_bluza3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+@media (max-width: 767px) {
+    .Bluzy20_bluza1 img, .Bluzy20_bluza2 img, .Bluzy20_bluza3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Bluzy20_bluza1, .Bluzy20_bluza2, .Bluzy20_bluza3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Bluzy20_bluza1 img, .Bluzy20_bluza2 img, .Bluzy20_bluza3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Bluzy20_bluza1, .Bluzy20_bluza2, .Bluzy20_bluza3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Bluzy20_bluza1 img, .Bluzy20_bluza2 img, .Bluzy20_bluza3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Bluzy20_bluza1, .Bluzy20_bluza2, .Bluzy20_bluza3{
+        width: 800px;
+    }
+}
+.Buty30_glowny{
+    width: 100%; /* Dostosowanie szerokości do kontenera, w którym znajdują się te sekcje */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Buty30_buty1, .Buty30_buty2, .Buty30_buty3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+@media (max-width: 767px) {
+    .Buty30_buty1 img, .Buty30_buty2 img, .Buty30_buty3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Buty30_buty1, .Buty30_buty2, .Buty30_buty3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Buty30_buty1 img, .Buty30_buty2 img, .Buty30_buty3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Buty30_buty1, .Buty30_buty2, .Buty30_buty3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Buty30_buty1 img, .Buty30_buty2 img, .Buty30_buty3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Buty30_buty1, .Buty30_buty2, .Buty30_buty3{
+        width: 800px;
+    }
+}
+.Koszulki50_glowny{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Koszulki50_koszulki1, .Koszulki50_koszulki2, .Koszulki50_koszulki3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+@media (max-width: 767px) {
+    .Koszulki50_koszulki1 img, .Koszulki50_koszulki2 img, .Koszulki50_koszulki3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Koszulki50_koszulki1, .Koszulki50_koszulki2, .Koszulki50_koszulki3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Koszulki50_koszulki1 img, .Koszulki50_koszulki2 img, .Koszulki50_koszulki3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Koszulki50_koszulki1, .Koszulki50_koszulki2, .Koszulki50_koszulki3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Koszulki50_koszulki1 img, .Koszulki50_koszulki2 img, .Koszulki50_koszulki3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Koszulki50_koszulki1, .Koszulki50_koszulki2, .Koszulki50_koszulki3{
+        width: 800px;
+    }
+}
+.Meskie_glowny{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Meskie_buty, .Meskie_spodenki, .Meskie_koszulki, .Meskie_bluzy{
+    background-color: white;
+    border: 1px black solid;
+    margin: 20px;
+}
+.Meskie_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Meskie_buty img, .Meskie_spodenki img, .Meskie_koszulki img, .Meskie_bluzy img{
+        width: 200px;
+        height: 200px;
+    }
+    .Meskie_buty, .Meskie_spodenki, .Meskie_koszulki, .Meskie_bluzy{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Meskie_buty img, .Meskie_spodenki img, .Meskie_koszulki img, .Meskie_bluzy img{
+        width: 500px;
+        height: 500px;
+    }
+    .Meskie_buty, .Meskie_spodenki, .Meskie_koszulki, .Meskie_bluzy{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Meskie_buty img, .Meskie_spodenki img, .Meskie_koszulki img, .Meskie_bluzy img{
+        width: 800px;
+        height: 800px;
+    }
+    .Meskie_buty, .Meskie_spodenki, .Meskie_koszulki, .Meskie_bluzy{
+        width: 800px;
+    }
+}
+.Meskie_buty_glowny{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Meskie_buty1, .Meskie_buty2, .Meskie_buty3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Meskie_buty_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Meskie_buty1 img, .Meskie_buty2 img, .Meskie_buty3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Meskie_buty1, .Meskie_buty2, .Meskie_buty3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Meskie_buty1 img, .Meskie_buty2 img, .Meskie_buty3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Meskie_buty1, .Meskie_buty2, .Meskie_buty3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Meskie_buty1 img, .Meskie_buty2 img, .Meskie_buty3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Meskie_buty1, .Meskie_buty2, .Meskie_buty3{
+        width: 800px;
+    }
+}
+.Meskie_spodnie_glowny{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Meskie_spodnie1, .Meskie_spodnie2, .Meskie_spodnie3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Meskie_spodnie_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Meskie_spodnie1 img, .Meskie_spodnie2 img, .Meskie_spodnie3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Meskie_spodnie1, .Meskie_spodnie2, .Meskie_spodnie3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Meskie_spodnie1 img, .Meskie_spodnie2 img, .Meskie_spodnie3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Meskie_spodnie1, .Meskie_spodnie2, .Meskie_spodnie3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Meskie_spodnie1 img, .Meskie_spodnie2 img, .Meskie_spodnie3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Meskie_spodnie1, .Meskie_spodnie2, .Meskie_spodnie3{
+        width: 800px;
+    }
+}
+.Meskie_koszulki_glowny{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Meskie_koszulki1, .Meskie_koszulki2, .Meskie_koszulki3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Meskie_koszulki_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Meskie_koszulki1 img, .Meskie_koszulki2 img, .Meskie_koszulki3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Meskie_koszulki1, .Meskie_koszulki2, .Meskie_koszulki3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Meskie_koszulki1 img, .Meskie_koszulki2 img, .Meskie_koszulki3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Meskie_koszulki1, .Meskie_koszulki2, .Meskie_koszulki3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Meskie_koszulki1 img, .Meskie_koszulki2 img, .Meskie_koszulki3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Meskie_koszulki1, .Meskie_koszulki2, .Meskie_koszulki3{
+        width: 800px;
+    }
+}
+.Meskie_bluzy_glowny{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Meskie_bluzy1, .Meskie_bluzy2, .Meskie_bluzy3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Meskie_bluzy_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Meskie_bluzy1 img, .Meskie_bluzy2 img, .Meskie_bluzy3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Meskie_bluzy1, .Meskie_bluzy2, .Meskie_bluzy3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Meskie_bluzy1 img, .Meskie_bluzy2 img, .Meskie_bluzy3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Meskie_bluzy1, .Meskie_bluzy2, .Meskie_bluzy3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Meskie_bluzy1 img, .Meskie_bluzy2 img, .Meskie_bluzy3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Meskie_bluzy1, .Meskie_bluzy2, .Meskie_bluzy3{
+        width: 800px;
+    }
+}
+.Damskie_glowny{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Damskie_buty, .Damskie_spodenki, .Damskie_koszulki, .Damskie_bluzy{
+    background-color: white;
+    border: 1px black solid;
+    margin: 20px;
+}
+.Damskie_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Damskie_buty img, .Damskie_spodenki img, .Damskie_koszulki img, .Damskie_bluzy img{
+        width: 200px;
+        height: 200px;
+    }
+    .Damskie_buty, .Damskie_spodenki, .Damskie_koszulki, .Damskie_bluzy{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Damskie_buty img, .Damskie_spodenki img, .Damskie_koszulki img, .Damskie_bluzy img{
+        width: 500px;
+        height: 500px;
+    }
+    .Damskie_buty, .Damskie_spodenki, .Damskie_koszulki, .Damskie_bluzy{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Damskie_buty img, .Damskie_spodenki img, .Damskie_koszulki img, .Damskie_bluzy img{
+        width: 800px;
+        height: 800px;
+    }
+    .Damskie_buty, .Damskie_spodenki, .Damskie_koszulki, .Damskie_bluzy{
+        width: 800px;
+    }
+}
+.Damskie_buty_glowny{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Damskie_buty1, .Damskie_buty2, .Damskie_buty3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Damskie_buty_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Damskie_buty1 img, .Damskie_buty2 img, .Damskie_buty3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Damskie_buty1, .Damskie_buty2, .Damskie_buty3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Damskie_buty1 img, .Damskie_buty2 img, .Damskie_buty3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Damskie_buty1, .Damskie_buty2, .Damskie_buty3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Damskie_buty1 img, .Damskie_buty2 img, .Damskie_buty3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Damskie_buty1, .Damskie_buty2, .Damskie_buty3{
+        width: 800px;
+    }
+}
+.Damskie_spodnie_glowny{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Damskie_spodnie1, .Damskie_spodnie2, .Damskie_spodnie3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Damskie_spodnie_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Damskie_spodnie1 img, .Damskie_spodnie2 img, .Damskie_spodnie3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Damskie_spodnie1, .Damskie_spodnie2, .Damskie_spodnie3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Damskie_spodnie1 img, .Damskie_spodnie2 img, .Damskie_spodnie3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Damskie_spodnie1, .Damskie_spodnie2, .Damskie_spodnie3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Damskie_spodnie1 img, .Damskie_spodnie2 img, .Damskie_spodnie3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Damskie_spodnie1, .Damskie_spodnie2, .Damskie_spodnie3{
+        width: 800px;
+    }
+}
+.Damskie_koszulki_glowny{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Damskie_koszulki1, .Damskie_koszulki2, .Damskie_koszulki3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Damskie_koszulki_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Damskie_koszulki1 img, .Damskie_koszulki2 img, .Damskie_koszulki3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Damskie_koszulki1, .Damskie_koszulki2, .Damskie_koszulki3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Damskie_koszulki1 img, .Damskie_koszulki2 img, .Damskie_koszulki3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Damskie_koszulki1, .Damskie_koszulki2, .Damskie_koszulki3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Damskie_koszulki1 img, .Damskie_koszulki2 img, .Damskie_koszulki3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Damskie_koszulki1, .Damskie_koszulki2, .Damskie_koszulki3{
+        width: 800px;
+    }
+}
+.Damskie_bluzy_glowny{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Damskie_bluzy1, .Damskie_bluzy2, .Damskie_bluzy3{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Damskie_bluzy_section h1{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Damskie_bluzy1 img, .Damskie_bluzy2 img, .Damskie_bluzy3 img{
+        width: 200px;
+        height: 100px;
+    }
+    .Damskie_bluzy1, .Damskie_bluzy2, .Damskie_bluzy3{
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Damskie_bluzy1 img, .Damskie_bluzy2 img, .Damskie_bluzy3 img{
+        width: 500px;
+        height: 250px;
+    }
+    .Damskie_bluzy1, .Damskie_bluzy2, .Damskie_bluzy3{
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Damskie_bluzy1 img, .Damskie_bluzy2 img, .Damskie_bluzy3 img{
+        width: 800px;
+        height: 400px;
+    }
+    .Damskie_bluzy1, .Damskie_bluzy2, .Damskie_bluzy3{
+        width: 800px;
+    }
+}
+.Dla_dzieci_glowny {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Dla_dzieci_buty, .Dla_dzieci_spodenki, .Dla_dzieci_koszulki, .Dla_dzieci_bluzy {
+    background-color: white;
+    border: 1px black solid;
+    margin: 20px;
+}
+.Dla_dzieci_section h1 {
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Dla_dzieci_buty img, .Dla_dzieci_spodenki img, .Dla_dzieci_koszulki img, .Dla_dzieci_bluzy img {
+        width: 200px;
+        height: 200px;
+    }
+    .Dla_dzieci_buty, .Dla_dzieci_spodenki, .Dla_dzieci_koszulki, .Dla_dzieci_bluzy {
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Dla_dzieci_buty img, .Dla_dzieci_spodenki img, .Dla_dzieci_koszulki img, .Dla_dzieci_bluzy img {
+        width: 500px;
+        height: 500px;
+    }
+    .Dla_dzieci_buty, .Dla_dzieci_spodenki, .Dla_dzieci_koszulki, .Dla_dzieci_bluzy {
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Dla_dzieci_buty img, .Dla_dzieci_spodenki img, .Dla_dzieci_koszulki img, .Dla_dzieci_bluzy img {
+        width: 800px;
+        height: 800px;
+    }
+    .Dla_dzieci_buty, .Dla_dzieci_spodenki, .Dla_dzieci_koszulki, .Dla_dzieci_bluzy {
+        width: 800px;
+    }
+}
+.Dla_dzieci_buty_glowny {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Dla_dzieci_buty1, .Dla_dzieci_buty2, .Dla_dzieci_buty3 {
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Dla_dzieci_buty_section h1 {
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Dla_dzieci_buty1 img, .Dla_dzieci_buty2 img, .Dla_dzieci_buty3 img {
+        width: 200px;
+        height: 100px;
+    }
+    .Dla_dzieci_buty1, .Dla_dzieci_buty2, .Dla_dzieci_buty3 {
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Dla_dzieci_buty1 img, .Dla_dzieci_buty2 img, .Dla_dzieci_buty3 img {
+        width: 500px;
+        height: 250px;
+    }
+    .Dla_dzieci_buty1, .Dla_dzieci_buty2, .Dla_dzieci_buty3 {
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Dla_dzieci_buty1 img, .Dla_dzieci_buty2 img, .Dla_dzieci_buty3 img {
+        width: 800px;
+        height: 400px;
+    }
+    .Dla_dzieci_buty1, .Dla_dzieci_buty2, .Dla_dzieci_buty3 {
+        width: 800px;
+    }
+}
+.Dla_dzieci_spodnie_glowny {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Dla_dzieci_spodnie1, .Dla_dzieci_spodnie2, .Dla_dzieci_spodnie3 {
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Dla_dzieci_spodnie_section h1 {
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Dla_dzieci_spodnie1 img, .Dla_dzieci_spodnie2 img, .Dla_dzieci_spodnie3 img {
+        width: 200px;
+        height: 100px;
+    }
+    .Dla_dzieci_spodnie1, .Dla_dzieci_spodnie2, .Dla_dzieci_spodnie3 {
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Dla_dzieci_spodnie1 img, .Dla_dzieci_spodnie2 img, .Dla_dzieci_spodnie3 img {
+        width: 500px;
+        height: 250px;
+    }
+    .Dla_dzieci_spodnie1, .Dla_dzieci_spodnie2, .Dla_dzieci_spodnie3 {
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Dla_dzieci_spodnie1 img, .Dla_dzieci_spodnie2 img, .Dla_dzieci_spodnie3 img {
+        width: 800px;
+        height: 400px;
+    }
+    .Dla_dzieci_spodnie1, .Dla_dzieci_spodnie2, .Dla_dzieci_spodnie3 {
+        width: 800px;
+    }
+}
+.Dla_dzieci_koszulki_glowny {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Dla_dzieci_koszulki1, .Dla_dzieci_koszulki2, .Dla_dzieci_koszulki3 {
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Dla_dzieci_koszulki_section h1 {
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Dla_dzieci_koszulki1 img, .Dla_dzieci_koszulki2 img, .Dla_dzieci_koszulki3 img {
+        width: 200px;
+        height: 100px;
+    }
+    .Dla_dzieci_koszulki1, .Dla_dzieci_koszulki2, .Dla_dzieci_koszulki3 {
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Dla_dzieci_koszulki1 img, .Dla_dzieci_koszulki2 img, .Dla_dzieci_koszulki3 img {
+        width: 500px;
+        height: 250px;
+    }
+    .Dla_dzieci_koszulki1, .Dla_dzieci_koszulki2, .Dla_dzieci_koszulki3 {
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Dla_dzieci_koszulki1 img, .Dla_dzieci_koszulki2 img, .Dla_dzieci_koszulki3 img {
+        width: 800px;
+        height: 400px;
+    }
+    .Dla_dzieci_koszulki1, .Dla_dzieci_koszulki2, .Dla_dzieci_koszulki3 {
+        width: 800px;
+    }
+}
+.Dla_dzieci_bluzy_glowny {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.Dla_dzieci_bluzy1, .Dla_dzieci_bluzy2, .Dla_dzieci_bluzy3 {
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border: black solid 1px;
+    margin: 10px;
+}
+.Dla_dzieci_bluzy_section h1 {
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .Dla_dzieci_bluzy1 img, .Dla_dzieci_bluzy2 img, .Dla_dzieci_bluzy3 img {
+        width: 200px;
+        height: 100px;
+    }
+    .Dla_dzieci_bluzy1, .Dla_dzieci_bluzy2, .Dla_dzieci_bluzy3 {
+        width: 200px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .Dla_dzieci_bluzy1 img, .Dla_dzieci_bluzy2 img, .Dla_dzieci_bluzy3 img {
+        width: 500px;
+        height: 250px;
+    }
+    .Dla_dzieci_bluzy1, .Dla_dzieci_bluzy2, .Dla_dzieci_bluzy3 {
+        width: 500px;
+    }
+}
+@media (min-width: 1200px) {
+    .Dla_dzieci_bluzy1 img, .Dla_dzieci_bluzy2 img, .Dla_dzieci_bluzy3 img {
+        width: 800px;
+        height: 400px;
+    }
+    .Dla_dzieci_bluzy1, .Dla_dzieci_bluzy2, .Dla_dzieci_bluzy3 {
+        width: 800px;
+    }
+}
